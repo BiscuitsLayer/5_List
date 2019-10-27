@@ -1,0 +1,69 @@
+digraph {
+node [shape="box"]
+edge [style="dashed" dir="both"]
+dirtype = "both"
+rankdir="LR"
+	elem_1 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="white"> idx: 1 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="white"> data: 50 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: -1 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 2 </TD></TR>
+	</TABLE>>]
+	elem_2 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="white"> idx: 2 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="white"> data: 51 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 1 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 3 </TD></TR>
+	</TABLE>>]
+	elem_3 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="white"> idx: 3 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="white"> data: 55 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 2 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 4 </TD></TR>
+	</TABLE>>]
+	elem_4 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="white"> idx: 4 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="white"> data: 59 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 3 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 5 </TD></TR>
+	</TABLE>>]
+	elem_5 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="white"> idx: 5 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="white"> data: 70 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 4 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: -1 </TD></TR>
+	</TABLE>>]
+"data" -> elem_1
+elem_1 -> elem_2
+elem_2 -> elem_3
+elem_3 -> elem_4
+elem_4 -> elem_5
+	elem_free_6 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> idx: 6 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> data: 0 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 5 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 7 </TD></TR>
+	</TABLE>>]
+	elem_free_7 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> idx: 7 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> data: 0 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 6 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 8 </TD></TR>
+	</TABLE>>]
+	elem_free_8 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> idx: 8 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> data: 0 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 7 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: 9 </TD></TR>
+	</TABLE>>]
+	elem_free_9 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="3">
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> idx: 9 </TD></TR>
+		<TR><TD COLSPAN="2" BGCOLOR="aquamarine"> data: 0 </TD></TR>
+		<TR><TD BGCOLOR="salmon" PORT="prev"> prev: 8 </TD>
+		<TD BGCOLOR="lawngreen" PORT="next"> next: -1 </TD></TR>
+	</TABLE>>]
+"free" -> elem_free_6
+elem_free_6 -> elem_free_7
+elem_free_7 -> elem_free_8
+elem_free_8 -> elem_free_9
+}
