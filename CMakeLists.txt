@@ -3,4 +3,4 @@ project(5_List)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(5_List main.cpp)
+add_executable(5_List main.cpp list_parts/List.cpp list_parts/List.h)
