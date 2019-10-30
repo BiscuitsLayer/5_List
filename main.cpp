@@ -1,4 +1,4 @@
-#include "list_parts/List.h"
+#include "list_parts/ListLib.h"
 
 int main() {
     List_t list = ListInit (LIST_SIZE);
